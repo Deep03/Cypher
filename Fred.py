@@ -18,9 +18,9 @@ for path in os.listdir(dir1):
     if os.path.isfile(os.path.join(dir1, path)):
         count += 1
 rr= random.randint(0,count)
-contact = {"Dad":'maheshlek@yahoo.com' ,
-           "sister":'samikshyalekhak2@gmail.com' ,
-           "brother":'deepaklekhak10@gmail.com'}
+contact = {"Dad":'xyz@gmail.com' ,
+           "sister":'xyz@gmail.com' ,
+           "brother":'xyz@gmail.com'}
 
 def speak(audio):
     engine.say(audio)
@@ -62,8 +62,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('lekhakdeepak10@gmail.com', 'Justwantpeace2003')
-    server.sendmail('lekhakdeepak10@gmail.com', to, content)
+    server.login('xyz@gmail.com', 'xyz@gmail.com')
+    server.sendmail('xyz@gmail.com', to, content)
     server.close()
 
 
